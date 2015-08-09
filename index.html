@@ -16,13 +16,11 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 -->
 <head>
   <!-- This tells the browser how to read the document. -->
-  <meta charset="utf-8">
-
+  <meta charset="utf-8" >
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
-
+ 
   <!-- Load the page styles. -->
-  <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -37,6 +35,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
   you can't accomplish with vanilla (regular) JavaScript.
   -->
+  
+
+  <script src="//use.typekit.net/kjg1gtj.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="js/jQuery.js"></script>
 
   <!-- More on helper.js in the class -->
@@ -46,13 +48,18 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
 
+   
   <meta name="viewport" content="width=device-width">
+  <script type="text/javascript" src="scripts/d3.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  
 </head>
 <body unresolved>
   <div id="main">
-    Hello world!   <!-- You'll be deleting this line in the course -->
+    <!-- You'll be deleting this line in the course -->
 
     <!--
     Everything from here to the <script> tag below is the skeleton of your
@@ -67,6 +74,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
+   
+    
     <div id="projects">
       <h2>Projects</h2>
     </div>
@@ -81,7 +90,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
-  </div>
 
   <!--
   The next line tells the browser where to download the JavaScript file you'll be
@@ -115,26 +123,28 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
+      document.getElementById('topContacts').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
+      document.getElementById('header').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
+      document.getElementById('workExperience').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
+      document.getElementById('projects').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
+      document.getElementById('education').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.display = 'none';
+      document.getElementById('letsConnect').style.backgroundColor = '#C7C5C5';
     }
     if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
+      document.getElementById('mapDiv').style.backgroundColor = '#C7C5C5';
     }
   </script>
+
+  
 </body>
 </html>
