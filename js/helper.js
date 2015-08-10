@@ -58,7 +58,7 @@ var HTMLonlineURL = '<br><a href="#">%data%</a>';
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 var footerStart = '<div id="footerContacts"><p>John Meas &#169;</p><div>'
-var footcontacts = '<li class="flex-item"><span class="zocial icon">%data%</span></li>'
+
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
@@ -172,7 +172,7 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
-      infowindow.open(map, marker)
+      infowindow.open(map, marker);
     });
 
     // this is where the pin actually gets added to the map.
